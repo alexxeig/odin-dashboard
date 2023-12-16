@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto.eot'); /* IE9 Compat Modes */
+    src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('roboto.woff') format('woff'), /* Modern Browsers */
+    url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+
+* {
+    /* outline: auto; */
+}
+
+
+.searchbar > img {
+    height: 1.5rem;
+}
+
+.accountmenu > img { 
+    height: 1.5rem;
+}
+
+.accountgreeting > img {
+    height: 4rem;
+}
+
+.logo > img { 
+    height: 3rem;
+}
+
+.firstmenu > img,
+.secondmenu > img  {
+    height: 1.8rem;
+}
+
+
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 100vh;
+}
+
+#sidebar { 
+    background-color: bisque;
+    padding: 20px;
+    padding-right: 70px;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    gap: 50px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header { 
+    background-color: beige;
+}
+
+#content {
+    background-color: lightcoral;
+}
+
+.logo, 
+.firstmenu, 
+.secondmenu { 
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
